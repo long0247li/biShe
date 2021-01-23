@@ -147,3 +147,143 @@ WARNING 2021-01-19 15:36:56,704 log 222 Not Found: /api/v1.0/houses/index
 WARNING 2021-01-19 15:36:56,706 log 222 Not Found: /api/v1.0/areas
 WARNING 2021-01-19 15:36:56,707 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 2665
 WARNING 2021-01-19 15:36:56,708 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 2644
+INFO 2021-01-21 18:27:29,455 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 18:27:57,103 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 18:28:09,223 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 18:28:33,161 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 18:51:01,025 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 18:55:35,797 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 19:01:48,797 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 19:02:23,251 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 47
+WARNING 2021-01-21 19:02:23,333 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-21 19:02:23,346 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-21 19:02:23,348 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 2996
+WARNING 2021-01-21 19:02:23,350 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 2975
+INFO 2021-01-21 19:02:26,293 basehttp 154 "GET /api/v1.0/imagecode?cur=644f6786-dd5e-4e13-bbc5-94211733a8cb&pre= HTTP/1.1" 301 0
+INFO 2021-01-21 19:02:26,548 basehttp 154 "GET /api/v1.0/imagecode/?cur=644f6786-dd5e-4e13-bbc5-94211733a8cb&pre= HTTP/1.1" 200 2825
+INFO 2021-01-21 19:03:22,706 basehttp 154 "OPTIONS /api/v1.0/session HTTP/1.1" 200 0
+INFO 2021-01-21 19:03:23,006 basehttp 154 "POST /api/v1.0/session HTTP/1.1" 200 82
+INFO 2021-01-21 19:03:30,168 basehttp 154 "POST /api/v1.0/session HTTP/1.1" 200 82
+INFO 2021-01-21 19:03:43,016 basehttp 154 "POST /api/v1.0/session HTTP/1.1" 200 82
+INFO 2021-01-21 19:03:54,330 basehttp 154 "POST /api/v1.0/session HTTP/1.1" 200 52
+INFO 2021-01-21 19:03:54,468 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 93
+WARNING 2021-01-21 19:03:54,471 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-21 19:03:54,473 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-21 19:03:54,474 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 2996
+WARNING 2021-01-21 19:03:54,477 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 2975
+INFO 2021-01-21 19:04:02,658 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 197
+INFO 2021-01-21 19:04:07,382 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 197
+INFO 2021-01-21 19:04:19,634 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 197
+INFO 2021-01-21 19:04:22,210 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 197
+INFO 2021-01-21 19:04:47,738 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:04:51,749 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:04:54,081 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:04:55,956 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:04:57,625 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:05:00,268 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+WARNING 2021-01-21 19:05:04,723 log 222 Not Found: /api/v1.0/orders
+WARNING 2021-01-21 19:05:04,727 basehttp 154 "GET /api/v1.0/orders?role=custom HTTP/1.1" 404 2990
+INFO 2021-01-21 19:05:06,679 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+WARNING 2021-01-21 19:05:08,397 log 222 Not Found: /api/v1.0/user/auth
+WARNING 2021-01-21 19:05:08,402 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 404 2987
+INFO 2021-01-21 19:05:10,125 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+WARNING 2021-01-21 19:05:11,995 log 222 Not Found: /api/v1.0/user/auth
+WARNING 2021-01-21 19:05:11,996 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 404 2987
+INFO 2021-01-21 19:05:13,771 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-21 19:05:15,150 basehttp 154 "DELETE /api/v1.0/session HTTP/1.1" 200 46
+INFO 2021-01-21 19:05:15,260 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 47
+WARNING 2021-01-21 19:05:15,270 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-21 19:05:15,272 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-21 19:05:15,273 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 2996
+WARNING 2021-01-21 19:05:15,274 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 2975
+INFO 2021-01-21 19:07:06,617 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-21 19:07:18,596 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 47
+WARNING 2021-01-21 19:07:18,610 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-21 19:07:18,611 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-21 19:07:18,612 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 2996
+WARNING 2021-01-21 19:07:18,613 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 2975
+INFO 2021-01-21 19:07:24,294 basehttp 154 "OPTIONS /api/v1.0/session HTTP/1.1" 200 0
+INFO 2021-01-21 19:07:24,723 basehttp 154 "POST /api/v1.0/session HTTP/1.1" 200 52
+INFO 2021-01-21 19:07:24,812 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 93
+WARNING 2021-01-21 19:07:24,816 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-21 19:07:24,816 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 2996
+WARNING 2021-01-21 19:07:24,819 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-21 19:07:24,820 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 2975
+INFO 2021-01-21 19:07:27,716 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-21 19:07:29,728 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-21 19:07:35,829 basehttp 154 "OPTIONS /api/v1.0/user/name HTTP/1.1" 200 0
+WARNING 2021-01-21 19:07:35,837 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:35,840 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:37,797 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:37,798 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:38,467 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:38,469 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:38,645 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:38,648 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:38,816 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:38,818 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:39,003 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:39,006 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:39,227 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:39,229 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:39,568 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:39,570 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:39,918 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:39,922 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+INFO 2021-01-21 19:07:42,038 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-21 19:07:44,024 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+WARNING 2021-01-21 19:07:49,809 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:49,811 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:49,992 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:49,993 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:50,159 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:50,166 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:50,330 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:50,337 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:50,507 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:50,510 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:50,650 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:50,655 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+WARNING 2021-01-21 19:07:50,887 log 222 Not Found: /api/v1.0/user/name
+WARNING 2021-01-21 19:07:50,890 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 404 2987
+INFO 2021-01-21 19:07:58,111 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:08:00,399 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:08:02,617 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-21 19:08:04,646 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:54:40,450 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-22 10:55:03,739 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-22 10:55:03,739 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-22 10:55:03,746 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 2975
+WARNING 2021-01-22 10:55:03,747 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 2996
+INFO 2021-01-22 10:55:03,815 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 93
+INFO 2021-01-22 10:55:08,958 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-22 10:55:11,143 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-22 10:55:21,281 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:55:24,564 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:55:26,331 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:55:30,794 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:55:32,510 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:55:34,231 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:55:35,982 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 10:55:37,466 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-22 16:36:34,198 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-22 16:37:33,321 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-22 16:37:33,321 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-22 16:37:33,345 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 3330
+WARNING 2021-01-22 16:37:33,346 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 3309
+INFO 2021-01-22 16:37:33,403 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 93
+INFO 2021-01-22 16:37:37,104 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-22 16:37:39,500 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 225
+INFO 2021-01-22 16:37:54,185 basehttp 154 "OPTIONS /api/v1.0/user/name HTTP/1.1" 200 0
+INFO 2021-01-22 16:37:54,606 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 200 50
+INFO 2021-01-22 16:37:58,605 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 200 50
+INFO 2021-01-22 16:38:05,048 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 221
+INFO 2021-01-22 16:38:06,904 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 200 50
+INFO 2021-01-22 16:38:17,988 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 74
+INFO 2021-01-22 16:38:26,211 basehttp 154 "OPTIONS /api/v1.0/user/auth HTTP/1.1" 200 0
+INFO 2021-01-22 16:38:26,364 basehttp 154 "POST /api/v1.0/user/auth HTTP/1.1" 200 122
+INFO 2021-01-22 16:38:37,390 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
+WARNING 2021-01-22 16:38:37,396 log 222 Not Found: /api/v1.0/user/houses
+WARNING 2021-01-22 16:38:37,401 basehttp 154 "GET /api/v1.0/user/houses HTTP/1.1" 404 3327
+INFO 2021-01-22 16:38:42,003 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
+INFO 2021-01-22 16:38:47,903 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106

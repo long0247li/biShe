@@ -18,6 +18,7 @@ logger = logging.getLogger('django')
 
 # 获取图形验证码
 class YzCode(View):
+    # get参数通过url传递，post参数放在request.body中
     def get(self, request):
         cur = request.GET.get('cur')  # 验证码编号
         # http请求变为字典，检索字典的值
@@ -48,7 +49,7 @@ class DxCode(View):
         json_a = request.body
         # 以指定编码格式解码字符串
         json_str = json_a.decode()
-        # 用来接收json数据，将json格式转换为字典
+        # 用来接收json数据，将json格式转换为字典，获取前台参数
         dict = json.loads(json_str)
         mobile = dict.get('mobile')  # 手机号
         id = dict.get('id')  # 图形验证码编号

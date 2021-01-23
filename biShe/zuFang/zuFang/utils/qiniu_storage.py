@@ -5,11 +5,9 @@ from django.conf import settings
 
 # 七牛云上传图片配置
 # 需要填写你的 Access Key 和 Secret Key
-# access_key = 'v3n5FPnRvLujRroKe3X9FxjMSgtWCmMWBeharusu'
-access_key = 'cUUMClavpxFILjg6FVLP3Vnjfj_P5vdWHoPI0X62'
-secret_key = 'jUk6dJo6uSfOYh6UAF6KZZBz9zqBiXvtL7dG8ToH'
-# secret_key = 'd3uJUlaQ9iKh0b5XkhU-Tlx5hjrDiWDDeHA4xotw'
-QINIUYUN_URL = 'http://qetriy1ur.bkt.clouddn.com/'
+access_key = 'Si_jSqAPyMNvhQb5L9dc57HHEfA7ZPswA9Teypik'
+secret_key = 'q236R2ZJJQM-4aknL6BHDFo6C9nfkb7wUsGKDnbp'
+QINIUYUN_URL = 'http://qn9m29tnk.hn-bkt.clouddn.com/'
 # 要上传的空间，填你的bucket名
 bucket_name = 'zufang810'
 
@@ -43,6 +41,6 @@ def storage(data):
 
 if __name__ == '__main__':
     # file_name = input("输入上传的文件")
-    file_name = '/home/ubuntu/Desktop/timg.jpg'
+    file_name = r'F:\tupian\suibian.jpg'
     with open(file_name, "rb") as f:
         storage(f.read())
