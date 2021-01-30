@@ -287,3 +287,54 @@ WARNING 2021-01-22 16:38:37,396 log 222 Not Found: /api/v1.0/user/houses
 WARNING 2021-01-22 16:38:37,401 basehttp 154 "GET /api/v1.0/user/houses HTTP/1.1" 404 3327
 INFO 2021-01-22 16:38:42,003 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
 INFO 2021-01-22 16:38:47,903 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
+INFO 2021-01-23 12:35:54,531 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-24 09:39:13,465 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-01-24 09:40:52,486 log 222 Not Found: /api/v1.0/houses/index
+WARNING 2021-01-24 09:40:52,486 log 222 Not Found: /api/v1.0/areas
+WARNING 2021-01-24 09:40:52,500 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 404 3309
+WARNING 2021-01-24 09:40:52,501 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 404 3330
+INFO 2021-01-24 09:40:52,733 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 89
+INFO 2021-01-24 09:40:58,031 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 221
+INFO 2021-01-30 13:16:32,968 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-30 13:17:04,412 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 200 42
+INFO 2021-01-30 13:17:04,469 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 200 64
+INFO 2021-01-30 13:17:04,536 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 89
+INFO 2021-01-30 13:17:07,765 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 221
+INFO 2021-01-30 13:17:11,382 basehttp 154 "OPTIONS /api/v1.0/session HTTP/1.1" 200 0
+INFO 2021-01-30 13:17:11,453 basehttp 154 "DELETE /api/v1.0/session HTTP/1.1" 200 46
+INFO 2021-01-30 13:17:11,575 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 47
+INFO 2021-01-30 13:17:11,597 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 200 64
+INFO 2021-01-30 13:17:11,611 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 200 42
+INFO 2021-01-30 13:17:29,067 basehttp 154 "POST /api/v1.0/session HTTP/1.1" 200 52
+INFO 2021-01-30 13:17:29,166 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 89
+INFO 2021-01-30 13:17:29,170 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 200 42
+INFO 2021-01-30 13:17:29,176 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 200 64
+INFO 2021-01-30 13:17:33,090 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 221
+INFO 2021-01-30 13:17:37,811 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 221
+INFO 2021-01-30 13:17:48,387 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-30 13:17:51,488 basehttp 154 "POST /api/v1.0/user/avatar HTTP/1.1" 200 156
+INFO 2021-01-30 13:18:00,137 basehttp 154 "OPTIONS /api/v1.0/user/name HTTP/1.1" 200 0
+INFO 2021-01-30 13:18:00,271 basehttp 154 "PUT /api/v1.0/user/name HTTP/1.1" 200 50
+INFO 2021-01-30 13:18:04,250 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 220
+INFO 2021-01-30 13:18:10,214 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
+INFO 2021-01-30 13:18:14,646 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 220
+INFO 2021-01-30 13:18:16,588 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
+INFO 2021-01-30 13:18:16,612 basehttp 154 "GET /api/v1.0/user/houses HTTP/1.1" 200 52
+INFO 2021-01-30 13:18:19,704 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 200 64
+INFO 2021-01-30 13:18:52,308 basehttp 154 "GET /api/v1.0/user/houses HTTP/1.1" 200 52
+INFO 2021-01-30 13:18:55,319 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 220
+INFO 2021-01-30 13:18:58,719 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 88
+INFO 2021-01-30 13:18:58,730 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 200 42
+INFO 2021-01-30 13:18:58,732 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 200 64
+INFO 2021-01-30 13:19:18,674 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 220
+INFO 2021-01-30 13:19:22,439 basehttp 154 "GET /api/v1.0/orders?role=landlord HTTP/1.1" 200 52
+INFO 2021-01-30 13:19:25,148 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 220
+INFO 2021-01-30 13:19:31,045 basehttp 154 "GET /api/v1.0/session HTTP/1.1" 200 88
+INFO 2021-01-30 13:19:31,053 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 200 64
+INFO 2021-01-30 13:19:31,056 basehttp 154 "GET /api/v1.0/houses/index HTTP/1.1" 200 42
+INFO 2021-01-30 13:19:34,488 basehttp 154 "GET /api/v1.0/user HTTP/1.1" 200 220
+INFO 2021-01-30 13:19:36,654 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
+INFO 2021-01-30 13:19:36,683 basehttp 154 "GET /api/v1.0/user/houses HTTP/1.1" 200 52
+INFO 2021-01-30 13:19:40,756 basehttp 154 "GET /api/v1.0/areas HTTP/1.1" 200 64
+INFO 2021-01-30 13:19:50,367 basehttp 154 "GET /api/v1.0/user/auth HTTP/1.1" 200 106
+INFO 2021-01-30 13:19:50,406 basehttp 154 "GET /api/v1.0/user/houses HTTP/1.1" 200 52

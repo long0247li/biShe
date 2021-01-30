@@ -21,4 +21,7 @@ urlpatterns = [
     # 添加users的总路由，注意导入include函数
     path('', include('users.urls')),
     path('', include('center.urls')),
+    path('', include('areas.urls')),
+    path('', include('rooms.urls')),
+    path('',include('orders.urls')),
 ]

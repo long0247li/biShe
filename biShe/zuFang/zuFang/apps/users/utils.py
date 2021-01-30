@@ -47,6 +47,7 @@ class UsernameMobileAuthBackend(ModelBackend):
             return user
 
 
+# 将函数作为参数传给另一个函数
 def my_decorator(func):
     #自定义的装饰器，判断是否登录
     def wrapper(request, *args, **kwargs):
@@ -65,6 +66,7 @@ def my_decorator(func):
 class LoginRequiredMixin(object):
     # 自定义的Mixin扩展类
     # 重写的as_view方法
+    # 不用实例化，可以直接使用类名来调用
     @classmethod
     def as_view(cls, **initkwargs):
         view = super().as_view(**initkwargs)

@@ -20,8 +20,8 @@ logger = logging.getLogger('django')
 class YzCode(View):
     # get参数通过url传递，post参数放在request.body中
     def get(self, request):
+        # request.GET.get 获取查询字符串数据
         cur = request.GET.get('cur')  # 验证码编号
-        # http请求变为字典，检索字典的值
         pre = request.GET.get('pre')  # 上一次验证码编号
         # 1.调用工具类captcha生成图形验证码
         # 生成图片image和对应的内容text
@@ -45,7 +45,7 @@ class YzCode(View):
 class DxCode(View):
     def post(self, request):
         # json.loads(request.body.decode("utf-8"))
-        # 获取前端传来的参数
+        # 获取最原始的请求体数据
         json_a = request.body
         # 以指定编码格式解码字符串
         json_str = json_a.decode()
@@ -144,7 +144,7 @@ class DxCode(View):
 # 注册按钮
 class ZhuCe(View):
     def post(self, request):
-        # 获取参数
+        # # 获取最原始的请求体数据
         # json.loads(request.body.decode("utf-8"))
         json_a = request.body
         # 以指定编码格式解码字符串
@@ -216,7 +216,7 @@ class ZhuCe(View):
 # 登录
 class DengLu(View):
     def post(self, request):
-        # 获取参数
+        # # 获取最原始的请求体数据
         json_a = request.body
         json_str = json_a.decode()
         dict = json.loads(json_str)
@@ -252,6 +252,7 @@ class DengLu(View):
 
     # 判断是否登录
     def get(self, request):
+        # 请求的用户对象，判断登录
         if request.user.is_authenticated:
             return JsonResponse({
                 "errno": "0",

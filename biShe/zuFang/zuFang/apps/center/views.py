@@ -18,7 +18,7 @@ from users.utils import LoginRequiredMixin
 # 个人中心
 class PersonalInfoView(LoginRequiredMixin, View):
     def get(self, request):
-        # user表的对象
+        # 请求的用户对象
         user = request.user
         # 返回的参数
         data = {
@@ -73,9 +73,9 @@ class PersonalImageView(LoginRequiredMixin, View):
 
 # 修改姓名
 class PersonalNameView(LoginRequiredMixin, View):
-    # 两个请求相同，后一个请求会把前一个请求覆盖掉
+    # 两个请求相同时，后一个请求会把前一个请求覆盖掉
     def put(self, request):
-        # 获取前端传来的参数
+        # 获取最原始的请求体数据
         data = request.body
         # 以指定解码方式获取前端的值，接收json数据方式获取前台参数
         name = json.loads(data.decode()).get('name')
@@ -135,7 +135,7 @@ class RealNameVerifyView(LoginRequiredMixin, View):
                 'errno': 4001,
                 'errmsg': '身份证已注册'
             })
-        # user对象的用户id
+        # 请求用户对象的用户id
         id = request.user.id
         user = request.user
         try:
