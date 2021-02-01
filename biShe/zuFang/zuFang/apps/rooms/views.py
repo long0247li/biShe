@@ -29,13 +29,13 @@ class HousesView(View):
         if not request.user.is_authenticated:
             return JsonResponse({
                 "errno": 4888,
-                'errmsg': '请先登录',
+                'errmsg': '请先登陆',
             })
         # 用来接收json数据，将json格式转换为字典，获取前台参数
         house_dict = json.loads(request.body)
         title = house_dict.get('title')  # 标题
         price = house_dict.get('price')  # 价格
-        area_id = house_dict.get('area_id')  # 城区id
+        area_id = house_dict.get('area_id')  #城区id
         address = house_dict.get('address')  # 房屋地址
         room_count = house_dict.get('room_count')  # 房间数目
         acreage = house_dict.get('acreage')  # 房屋面积
@@ -45,10 +45,11 @@ class HousesView(View):
         deposit = house_dict.get('deposit')  # 房屋押金
         min_days = house_dict.get('min_days')  # 最少入住天数
         max_days = house_dict.get('max_days')  # 最大入住天数
-        facility = house_dict.get('facility')  # 用户选择设施id列表，如：[7,8]
+        facility = house_dict.pop('facility')  # 用户选择设施id列表，如：[7,8]
 
         # 校验，如果所有都不
-        if not all((title, price, area_id, address, room_count, acreage, unit, capacity, beds, deposit, min_days)):
+        if not all((title, price, area_id, address, room_count, acreage,
+                    unit, capacity, beds, deposit, min_days)):
             return return_err(4002)
         try:
             # 城区id匹配数据库中的id数据
@@ -73,7 +74,10 @@ class HousesView(View):
             return return_err(4103, min_days, '居住最大时间小于最小时间')
         try:
             # 创建并保存一个用户对象，request.user是用户模型对象
-            house = House.objects.create(user=request.user, **house_dict)
+            house = House.objects.create(
+                user=request.user,
+                **house_dict
+            )
             if facility:
                 house.facility.add(*facility)
         except Exception as e:
@@ -81,15 +85,15 @@ class HousesView(View):
         return JsonResponse({
             "errno": "0",
             "errmsg": "发布成功",
-            "data":{
+            "data": {
                 "house_id": house.pk
             }
         })
 
     # 获取房源，房屋数据搜索
-    # get参数通过url传递，post参数放在request.body中
+    # get参数通过url传递， post参数放在request.body中
     def get(self, request: HttpRequest) -> HttpResponse:
-        # request.GET.get 获取查询字符串数据
+        # request.GET.get获取查询字符串数据
         aid = request.GET.get('aid')  # 区域id
         sd = request.GET.get('sd')  # 开始日期
         ed = request.GET.get('ed')  # 结束时间
@@ -128,28 +132,24 @@ class HousesView(View):
         o = '-update_time' if sk == 'new' else '-order_count' if sk == 'booking' else 'price' if sk == 'price-inc' else '-price'
         try:
             # 对对象进行复杂查询，使用多样化的操作符生成sql语句
-            houses = House.objects.filter(
-                area__in=addresses, min_days__lte=ld
-            ).filter(
-                Q(max_days=0) | Q(max_days__gte=ld)
-            ).order_by(o) if date_flag else House.objects.filter(area__in=addresses).order_by(o)
+            houses = House.objects.filter(area__in=addresses,
+                                          min_days__lte=ld).filter(Q(max_days=0) |
+                                                                   Q(max_days__gte=ld)).order_by(
+                o) if date_flag else House.objects.filter(area__in=addresses).order_by(o)
 
-            is_order_list = [
-                order.house.pk for order in
-                Order.objects.filter(status=3).filter(
-                    ~Q(Q(begin_date__gte=ed) | Q(end_date__lte=sd))
-                )
-            ]
+            is_order_list = [order.house.pk for order in
+                             Order.objects.filter(status=3).filter(
+                                 ~Q(Q(begin_date__gte=ed) | Q(end_date__lte=sd)))]
         except Exception as e:
             return return_err(4001, e)
         try:
-            # 分页器Paginator,每页显示的条数
+            # 分页器Paginator，每页显示的条数
             paginator = Paginator(houses, 2)  # 生成的每页的对象
             houses_page = paginator.page(p)  # 动态显示指定页码的数据
         except Exception as e:
             return return_err(4001, e)
         house_list = []
-        for house in house_list:
+        for house in houses_page:
             house_list.append({
                 "address": house.address,  # 房屋地址
                 "area_name": house.area.name,  # 城区名
@@ -164,10 +164,9 @@ class HousesView(View):
                 'status': house.pk in is_order_list
             })
         return JsonResponse({
-            'data': {
-                'houses': house_list,  # 房屋列表
-                "total_page": paginator.num_pages  # 总页数
-            },
+            'data': {'houses': house_list,  # 房屋列表
+                     "total_page": paginator.num_pages  # 总页数
+                     },
             "errmsg": "请求成功",
             "errno": "0"
         })
